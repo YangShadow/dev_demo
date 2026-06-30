@@ -8,4 +8,4 @@ if (!html.includes(expected)) {
   process.exit(1);
 }
 
-console.log("OK: stargate welcome text exists");
+console.log("OK: welcome text exists");
