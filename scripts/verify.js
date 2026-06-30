@@ -1,7 +1,7 @@
 import fs from "node:fs";
 
 const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
-const expectedLines = ["谢谢你的光临"];
+const expectedLines = ["谢谢你哦"];
 
 const missing = expectedLines.filter((line) => !html.includes(line));
 

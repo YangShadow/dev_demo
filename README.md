@@ -11,5 +11,5 @@ npm test
 Expected page text:
 
 ```text
-谢谢你的光临
+谢谢你哦
 ```
