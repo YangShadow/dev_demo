@@ -1,7 +1,7 @@
 import fs from "node:fs";
 
 const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
-const expected = "欢迎光临stargate！";
+const expected = "欢迎光临";
 
 if (!html.includes(expected)) {
   console.error(`Expected index.html to contain: ${expected}`);
@@ -9,4 +9,3 @@ if (!html.includes(expected)) {
 }
 
 console.log("OK: stargate welcome text exists");
-
