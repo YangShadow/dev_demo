@@ -1,10 +1,12 @@
 import fs from "node:fs";
 
 const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
-const expected = "欢迎光临";
+const expectedLines = ["欢迎光临", "这里是 STARGATE！"];
 
-if (!html.includes(expected)) {
-  console.error(`Expected index.html to contain: ${expected}`);
+const missing = expectedLines.filter((line) => !html.includes(line));
+
+if (missing.length > 0) {
+  console.error(`Expected index.html to contain: ${missing.join(", ")}`);
   process.exit(1);
 }
 
