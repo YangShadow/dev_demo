@@ -11,5 +11,5 @@ npm test
 Expected page text:
 
 ```text
-谢谢你哦
+欢迎光临stargate！
 ```
